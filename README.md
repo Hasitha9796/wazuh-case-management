@@ -74,17 +74,6 @@ sudo /usr/share/wazuh-dashboard/bin/opensearch-dashboards-plugin remove wazuhCas
 sudo systemctl restart wazuh-dashboard
 ```
 
-## Building from source
-
-Requires an OpenSearch Dashboards 2.19.5 development checkout, Node.js 18 and Yarn 1.x:
-
-```bash
-# place the plugin source under <OSD>/plugins/wazuh-case
-cd <OSD>/plugins/wazuh-case
-yarn build --allow-root
-# output: build/wazuhCaseManagement-2.19.5.zip
-```
-
 ## License
 
 Provided as-is for use with Wazuh deployments.
