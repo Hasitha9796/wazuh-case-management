@@ -1,6 +1,6 @@
 # Wazuh Case Management Plugin
 
-A comprehensive **case management & incident response** plugin for **Wazuh 4.14.x** (OpenSearch Dashboards **2.19.5**). TheHive-style workflow built directly into the Wazuh dashboard.
+A comprehensive **case management & incident response** plugin for **Wazuh 4.14.x** (OpenSearch Dashboards **2.19.5**). 
 
 > Prebuilt package: [`wazuhCaseManagement-2.19.5-4.14.7.zip`](./wazuhCaseManagement-2.19.5-4.14.7.zip)
 
