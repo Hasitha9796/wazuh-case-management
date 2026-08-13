@@ -20,7 +20,7 @@ A comprehensive **case management & incident response** plugin for **Wazuh 4.14.
 |-----------|---------|
 | Wazuh | 4.14.x |
 | OpenSearch Dashboards | 2.19.5 |
-| Plugin | 1.0.0 |
+| Plugin | 1.0.5 |
 
 > The plugin's `opensearchDashboardsVersion` must exactly match your dashboard's version. Confirm with:
 > ```bash
