@@ -2,6 +2,18 @@
 
 All notable changes to the Wazuh Case Management plugin.
 
+## [1.2.1] - 2026-08-16
+### Fixed
+- **API keys table ran outside the settings panel.** Its columns had fixed pixel widths that added up to more than the card is wide, so the right-hand columns sat over the page background once a key row existed. Columns are now sized as percentages of the panel, a new key wraps instead of overflowing its callout, and the endpoint reference rows wrap on narrow screens.
+
+### Changed
+- **Email recipients are reachable from the mail server section.** The SMTP card now lists every email channel with its addresses and has an **Add email channel** button. Previously a channel could only be added as a webhook and then switched to email, so the only visible email box was the test-send one.
+- **Outbound channels has separate "Add email channel" and "Add webhook channel" buttons.**
+- **A saved SMTP password now shows as saved**, with a Change button, instead of an empty field. Stored secrets are never sent to the browser, so a blank box read as lost data.
+- **A warning appears when the mail server is configured but email notifications are switched off**, since email channels are skipped in that state.
+- **Settings are harder to lose:** a save bar follows the page while edits are pending, the header shows when the settings were last saved and by whom, and the browser warns before a reload discards unsaved changes.
+- The test-send section states that it checks the server only and does not add a recipient.
+
 ## [1.2.0] - 2026-08-15
 ### Added
 - **Email notifications over SMTP.** A dependency free SMTP client (plain, STARTTLS or implicit TLS; AUTH PLAIN / LOGIN / CRAM-MD5 / none with automatic negotiation) sends case notifications by mail. The mail server is configured once in **Settings > Notifications**, giving one global sender for every email channel.
